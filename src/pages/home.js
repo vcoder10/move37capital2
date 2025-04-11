@@ -5,14 +5,17 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Stats from '../components/Stats';
 import Navbar from '../components/Navbar';
+import WhatWeDo from '../components/WhatWeDo';
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-[#FDFBCF]'>
 
         <Navbar />  
 
         <Hero />
+
+        <WhatWeDo />
 
         <Stats />
 

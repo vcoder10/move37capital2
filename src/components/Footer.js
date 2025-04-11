@@ -4,9 +4,9 @@ import { FaLinkedin, FaTwitter, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-10 mt-20">
+    <footer className="bg-black text-white py-10 mt-20">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
-        
+
         {/* Company Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Move37 Capital</h3>
