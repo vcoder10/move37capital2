@@ -31,14 +31,14 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="bg-[#FDFBCF] px-6 md:px-16" id="team">
+    <section className="bg-white px-6 md:px-16" id="team">
       <h2 className="text-5xl font-bold text-center mb-16 text-blue-900">Meet Our Team</h2>
 
       <div className="space-y-24">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="flex flex-col lg:flex-row items-center lg:items-start bg-[#EBD58D] p-8 rounded-3xl shadow-lg"
+            className="flex flex-col lg:flex-row items-center lg:items-start bg-white p-8 rounded-3xl shadow-lg"
           >
             {/* Image */}
             <div className="flex-shrink-0 mb-6 lg:mb-0 lg:mr-10">

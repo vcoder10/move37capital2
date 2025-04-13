@@ -9,7 +9,7 @@ import WhatWeDo from '../components/WhatWeDo';
 
 const Home = () => {
   return (
-    <div className='bg-[#FDFBCF]'>
+    <div className=''>
 
         <Navbar />  
 

@@ -32,7 +32,7 @@ const Contact = () => {
                         <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
                         <p className="mb-2"><strong>Email:</strong> support@move37capital.com</p>
                         <p className="mb-2"><strong>Phone:</strong> +1 (212) 555-1234</p>
-                        <p className="mb-2"><strong>Address:</strong><br />123 Wall Street<br />New York, NY 10005</p>
+                        <p className="mb-2"><strong>Address:</strong><br />GR145 WeWork, Salapuria<br />Bengaluru, IN 560076</p>
                         <p className="mt-6">We typically respond within 1-2 business days. For urgent inquiries, please call.</p>
                     </div>
                 </div>

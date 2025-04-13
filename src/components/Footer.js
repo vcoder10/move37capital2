@@ -22,7 +22,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <p className="flex items-center"><FaEnvelope className="mr-2" /> support@move37capital.com</p>
           <p className="flex items-center mt-2"><FaPhone className="mr-2" /> +1 (212) 555-1234</p>
-          <p className="mt-2">123 Wall Street, 45th Floor<br />New York, NY 10005</p>
+          <p className="mt-2">GR145 WeWork, Salapuria<br />Bengaluru, IN 560076</p>
         </div>
 
         {/* Quick Links */}
