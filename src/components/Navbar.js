@@ -9,7 +9,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className='flex items-center space-x-4'>
-            <img src='./images/logo3.jpg' alt='logo' className='h-12 w-48 object-cover' />
+            <img src='./images/logo.jpg' alt='logo' className='h-12 w-60 object-cover' />
             {/* <span className='text-white text-2xl font-bold'>Move37</span> */}
           </div>
 

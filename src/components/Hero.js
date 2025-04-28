@@ -21,7 +21,7 @@ const Hero = () => {
 
       {/* Hero content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-6">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">We are the No. 1 Investment Company</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">We are Fastest Growing Investment Company</h1>
         <p className="text-lg md:text-2xl mb-6">
           Trusted by top investors worldwide for excellence in portfolio management.
         </p>
