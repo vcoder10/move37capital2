@@ -4,35 +4,35 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-black py-4 shadow-md">
+      <nav className="bg-black py-4 shadow-md font-sans">
         <div className="container mx-auto flex items-center justify-between px-6">
 
-          {/* Logo */}
-          <div className="flex items-center space-x-4">
+          {/* Logo with Link to Home */}
+          <Link to="/" className="flex items-center">
             <img
               src="./images/logo.jpg"
               alt="logo"
               className="h-8 md:h-10 object-contain"
             />
-          </div>
+          </Link>
 
           {/* Navigation Links */}
-          <div className="flex space-x-4 md:space-x-8">
+          <div className="flex space-x-6 px-10 sm:space-x-8 md:space-x-14">
             <Link
               to="/"
-              className="text-white text-sm md:text-lg hover:underline hover:text-yellow-300 transition"
+              className="text-white text-sm sm:text-base md:text-lg hover:text-blue-400 transition font-medium"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-white text-sm md:text-lg hover:underline hover:text-yellow-300 transition"
+              className="text-white text-sm sm:text-base md:text-lg hover:text-blue-400 transition font-medium"
             >
               About
             </Link>
             <Link
               to="/contact"
-              className="text-white text-sm md:text-lg hover:underline hover:text-yellow-300 transition"
+              className="text-white text-sm sm:text-base md:text-lg hover:text-blue-400 transition font-medium"
             >
               Contact
             </Link>
