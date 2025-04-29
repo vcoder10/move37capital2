@@ -6,7 +6,7 @@ const Stats = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/images/contact-background3.jpg"
+          src="/images/stats-bg.jpg"
           alt="Stats Background"
           className="w-full h-full object-cover opacity-80"
         />

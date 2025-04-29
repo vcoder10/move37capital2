@@ -7,7 +7,7 @@ const Contact = () => {
       {/* Background Image with opacity */}
       <div className="absolute inset-0">
         <img
-          src="/images/contact-background.jpg"
+          src="/images/contact-bg.jpg"
           alt="Background"
           className="w-full h-full object-cover opacity-100"
         />

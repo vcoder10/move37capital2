@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="relative h-[80vh] overflow-hidden">
-      {/* Background video */}
+      {/* Background video
       <video
         autoPlay
         loop
@@ -14,8 +14,14 @@ const Hero = () => {
       >
         <source src="/video/home-hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
-
+      </video> */}
+      <div className="absolute inset-0">
+        <img
+          src="/images/hero5.jpg"
+          alt="Background"
+          className="w-full h-full object-cover opacity-100"
+        />
+      </div>
       {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
 
