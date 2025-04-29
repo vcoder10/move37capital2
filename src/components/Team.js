@@ -4,7 +4,7 @@ const teamMembers = [
   {
     name: 'Kunal Gautam',
     role: 'Co-Founder & CEO',
-    image: '/images/person.jpg',
+    image: '/images/kunal.jpg',
     bio: `Kunal has held senior trading positions at Millennium Management, Quantmetrics Capital Management, Futex, and G.H. Financials. He has an MBA in Finance from XLRI and a Computer Science degree from IIIT Allahabad.`,
     linkedIn: 'https://www.linkedin.com/in/kungautam/',
   },
