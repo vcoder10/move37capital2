@@ -18,14 +18,14 @@ const teamMembers = [
   {
     name: 'Kedarnath Kulkarni',
     role: 'Portfolio Manager / Trading Operations',
-    image: '/images/person.jpg',
+    image: '/images/kedar.jpg',
     bio: `Kedarnath joined Move37 Capital in 2023. He previously worked with TEKsystems, Sagarsoft, and Quantmetrics. He brings over a decade of experience in trading systems and holds a Bachelor's degree in Information Science from Visvesvaraya Technological University.`,
     linkedIn: 'https://www.linkedin.com/in/kedarnath-kulkarni-32441136',
   },
   {
     name: 'Sameer Ashokrao Desai',
     role: 'Operations Manager',
-    image: '/images/person.jpg',
+    image: '/images/sameer.png',
     bio: `Sameer joined Move37 Capital in 2023. He has worked with Flyremit, Quantmetrics, and SS&C GlobeOp. With an MBA in Finance from Shivaji University and a B.Com from Karnatak University, he brings deep experience in treasury and operations.`,
     linkedIn: 'https://www.linkedin.com/in/sameer-a-desai-778963182/',
   },
