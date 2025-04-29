@@ -14,7 +14,7 @@ const Contact = () => {
       </div>
 
       {/* Foreground content */}
-      <div className="relative z-10 max-w-6xl w-full bg-white/100 backdrop-blur-xl p-12 rounded-3xl shadow-lg">
+      <div className="relative z-10 max-w-6xl w-full bg-white/40 backdrop-blur-sm p-12 rounded-3xl shadow-lg">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">Get in Touch</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
