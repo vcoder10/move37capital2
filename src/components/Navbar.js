@@ -30,12 +30,7 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link
-              to="/vision"
-              className="text-white text-sm sm:text-base md:text-lg hover:text-blue-400 transition font-medium"
-            >
-              Vision
-            </Link>
+            
 
             <Link
               to="/contact"

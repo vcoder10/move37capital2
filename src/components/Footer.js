@@ -12,7 +12,9 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Move37 Capital</h3>
           <p>Innovative investment strategies backed by data, experience, and trust.</p>
           <div className="mt-4 flex items-center space-x-4">
-            <FaLinkedin className="text-white hover:text-blue-400 cursor-pointer" />
+          <a href="https://www.linkedin.com/company/move37capital" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin className="text-white hover:text-blue-400 cursor-pointer" />
+  </a>
             <FaTwitter className="text-white hover:text-blue-400 cursor-pointer" />
           </div>
         </div>
