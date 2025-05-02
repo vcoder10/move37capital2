@@ -1,41 +1,32 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import { FaLinkedin, FaTwitter, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-10 mt-20">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 text-sm">
 
         {/* Company Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Move37 Capital</h3>
-          <p>Innovative investment strategies backed by data, experience, and trust.</p>
+          {/* <p>Innovative investment strategies backed by data, experience, and trust.</p> */}
           <div className="mt-4 flex items-center space-x-4">
-          <a href="https://www.linkedin.com/company/move37capital" target="_blank" rel="noopener noreferrer">
-    <FaLinkedin className="text-white hover:text-blue-400 cursor-pointer" />
-  </a>
-            <FaTwitter className="text-white hover:text-blue-400 cursor-pointer" />
+            <a
+              href="https://www.linkedin.com/company/move37capital"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-white hover:text-blue-400 cursor-pointer" />
+            </a>
           </div>
         </div>
 
-        {/* Address */}
+        {/* Contact Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <p className="flex items-center"><FaEnvelope className="mr-2" /> support@move37capital.com</p>
+          <p className="flex items-center"><FaEnvelope className="mr-2" /> contactus@move37capital.com</p>
           <p className="flex items-center mt-2"><FaPhone className="mr-2" /> +1 (212) 555-1234</p>
           <p className="mt-2">GR145 WeWork, Salapuria<br />Bengaluru, IN 560076</p>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            {/* <li><Link to="/about" className="hover:text-yellow-300">About Us</Link></li> */}
-            <li><Link to="/contact" className="hover:text-yellow-300">Contact</Link></li>
-            {/* <li><a href="#" className="hover:text-yellow-300">Privacy Policy</a></li>
-            <li><a href="#" className="hover:text-yellow-300">Terms & Conditions</a></li> */}
-          </ul>
         </div>
 
       </div>

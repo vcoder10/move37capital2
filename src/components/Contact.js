@@ -97,7 +97,7 @@ const Contact = () => {
               <Mail className="text-blue-500 w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold">Email</h3>
-                <p>support@move37capital.com</p>
+                <p>contactus@move37capital.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -114,9 +114,7 @@ const Contact = () => {
                 <p>GR145 WeWork, Salapuria<br />Bengaluru, IN 560076</p>
               </div>
             </div>
-            <p className="text-gray-600 text-sm mt-6">
-              We typically respond within 1-2 business days. For urgent inquiries, please call.
-            </p>
+            
           </div>
         </div>
       </div>
