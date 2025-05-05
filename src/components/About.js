@@ -15,7 +15,7 @@ const About = () => {
       {/* Foreground Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
         <section className="max-w-4xl bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-2xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800">About Us</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-blue-900">About Us</h1>
 
           <p className="text-gray-700 text-lg leading-relaxed space-y-4">
             <span className="block mb-4">
