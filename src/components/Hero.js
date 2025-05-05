@@ -17,7 +17,7 @@ const Hero = () => {
       </video> */}
       <div className="absolute inset-0">
         <img
-          src="/images/london_city2.jpg"
+          src="/images/image.png"
           alt="Background"
           className="w-full h-full object-cover opacity-100"
         />
@@ -33,7 +33,7 @@ const Hero = () => {
         </p>
         <Link
           to="/contact"
-          className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition"
+          className="bg-blue-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition"
         >
           Get in Touch
         </Link>
