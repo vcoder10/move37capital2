@@ -5,7 +5,7 @@ const teamMembers = [
     name: 'Kunal Gautam',
     role: 'Co-Founder & CEO',
     image: '/images/kunal.jpg',
-    bio: `Kunal has held senior trading positions at Millennium Management, Quantmetrics Capital Management, Futex, and G.H. Financials. He has an MBA in Finance from XLRI and a Computer Science degree from IIIT Allahabad.`,
+    bio: `Kunal brings over 15 years of experience in trading and portfolio management. He has served as a Portfolio Manager at Millennium Management and was previously a Partner at Quantmetrics Capital Management. Earlier in his career, he held roles as a Quantitative Trader at Futex and a Proprietary Trader at G.H. Financials. Kunal holds an MBA in Finance from XLRI Jamshedpur (India) and a B.Tech in Information Technology from the Indian Institute of Information Technology (IIIT), Allahabad (India).`,
     linkedIn: 'https://www.linkedin.com/in/kungautam/',
   },
   {
