@@ -17,7 +17,7 @@ const Hero = () => {
       </video> */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero5.jpg"
+          src="/images/london_city2.jpg"
           alt="Background"
           className="w-full h-full object-cover opacity-100"
         />

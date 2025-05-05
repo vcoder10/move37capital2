@@ -6,7 +6,7 @@ const About = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/images/about-bg.jpg" // Save your new background image here
+          src="/images/london_clock3.jpg" // Save your new background image here
           alt="About Background"
           className="w-full h-full object-cover opacity-100"
         />

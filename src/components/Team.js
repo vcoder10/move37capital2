@@ -15,20 +15,7 @@ const teamMembers = [
     bio: `Dr. Mushtaq Shah served as Co-Founder and CIO at Quantmetrics Capital Management (2003–2019). His extensive career includes leadership roles at Equinox Capital, Credit Suisse, NationsBank Europe, Goldman Sachs, and UBS Securities. He holds a PhD in Financial Econometrics from the London School of Economics and an MPhil in Economics from Cambridge University.`,
     linkedIn: 'https://www.linkedin.com/in/mushtaq-shah-9103a124/',
   },
-  {
-    name: 'Kedarnath Kulkarni',
-    role: 'Portfolio Manager / Trading Operations',
-    image: '/images/kedar.jpg',
-    bio: `Kedarnath joined Move37 Capital in 2023. He previously worked with TEKsystems, Sagarsoft, and Quantmetrics. He brings over a decade of experience in trading systems and holds a Bachelor's degree in Information Science from Visvesvaraya Technological University.`,
-    linkedIn: 'https://www.linkedin.com/in/kedarnath-kulkarni-32441136',
-  },
-  {
-    name: 'Sameer Ashokrao Desai',
-    role: 'Operations Manager',
-    image: '/images/sameer.png',
-    bio: `Sameer joined Move37 Capital in 2023. He has worked with Flyremit, Quantmetrics, and SS&C GlobeOp. With an MBA in Finance from Shivaji University and a B.Com from Karnatak University, he brings deep experience in treasury and operations.`,
-    linkedIn: 'https://www.linkedin.com/in/sameer-a-desai-778963182/',
-  },
+  
 ];
 
 const Team = () => {
