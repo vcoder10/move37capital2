@@ -104,14 +104,14 @@ const Contact = () => {
               <Phone className="text-blue-500 w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold">Phone</h3>
-                <p>+44 7741019491</p>
+                <p>+44 77410 19491</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <MapPin className="text-blue-500 w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold">Address</h3>
-                <p>London, UK</p>
+                <p>Spaces, The Charter Building,<br/> Uxbridge, UB8 1JG</p>
               </div>
             </div>
             
