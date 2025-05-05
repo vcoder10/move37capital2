@@ -97,21 +97,21 @@ const Contact = () => {
               <Mail className="text-blue-500 w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold">Email</h3>
-                <p>contactus@move37capital.com</p>
+                <p>contact-us@move37capital.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Phone className="text-blue-500 w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold">Phone</h3>
-                <p>+1 (212) 555-1234</p>
+                <p>+44 7741019491</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <MapPin className="text-blue-500 w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold">Address</h3>
-                <p>GR145 WeWork, Salapuria<br />Bengaluru, IN 560076</p>
+                <p>London, UK</p>
               </div>
             </div>
             
