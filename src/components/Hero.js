@@ -23,7 +23,7 @@ const Hero = () => {
         />
       </div>
       {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
 
       {/* Hero content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-6">

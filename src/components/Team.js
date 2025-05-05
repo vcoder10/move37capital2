@@ -12,16 +12,15 @@ const teamMembers = [
     name: 'Dr. Mushtaq Shah',
     role: 'Co-Founder & CIO',
     image: '/images/person.jpg',
-    bio: `Dr. Mushtaq Shah served as Co-Founder and CIO at Quantmetrics Capital Management (2003–2019). His extensive career includes leadership roles at Equinox Capital, Credit Suisse, NationsBank Europe, Goldman Sachs, and UBS Securities. He holds a PhD in Financial Econometrics from the London School of Economics and an MPhil in Economics from Cambridge University.`,
+    bio: `Dr. Mushtaq Shah is a seasoned investor and economist with over three decades of experience in financial markets and quantitative research. He was the Co-Founder and CIO of Quantmetrics Capital Management from 2003 to 2019. Prior to that, he served as Head of Research at Equinox Capital Management, where he led a multi-strategy equity arbitrage hedge fund (Eclipse1). His earlier roles include senior positions at Credit Suisse First Boston, NationsBank Europe (Bank of America), and Goldman Sachs, where he held leadership roles in proprietary trading and quantitative analysis.\n\nDr. Shah began his career as a European Economic Analyst at UBS Securities. He holds a PhD in Financial Econometrics from the London School of Economics and an MPhil in Economics from the University of Cambridge.`,
     linkedIn: 'https://www.linkedin.com/in/mushtaq-shah-9103a124/',
   },
-  
 ];
 
 const Team = () => {
   return (
     <section className="bg-white px-6 md:px-16 py-12" id="team">
-      <h2 className="text-5xl font-bold text-center mb-16 text-blue-900">Meet Our Team</h2>
+      <h2 className="text-5xl font-bold text-center mb-16 text-blue-900">Our Leadership</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-12">
         {teamMembers.map((member, index) => (
@@ -42,7 +41,9 @@ const Team = () => {
             <div className="w-full md:w-2/3 p-6">
               <h3 className="text-3xl font-semibold text-blue-800">{member.name}</h3>
               <p className="text-lg font-medium italic text-gray-600 mb-4">{member.role}</p>
-              <p className="text-gray-700 mb-4">{member.bio}</p>
+              {member.bio.split('\n\n').map((paragraph, i) => (
+                <p key={i} className="text-gray-700 mb-4">{paragraph}</p>
+              ))}
               <a
                 href={member.linkedIn}
                 target="_blank"
