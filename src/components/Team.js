@@ -20,7 +20,7 @@ const teamMembers = [
 const Team = () => {
   return (
     <section className="bg-white px-6 md:px-16 py-12" id="team">
-      <h2 className="text-5xl font-bold text-center mb-16 text-blue-900">Our Leadership</h2>
+      <h2 className="text-5xl font-bold text-center mb-16 text-blue-900">Leadership Team</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-12">
         {teamMembers.map((member, index) => (
