@@ -8,24 +8,26 @@ const Contact = () => {
     e.preventDefault();
     const form = e.target;
 
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value
-    };
+    const formData = new FormData(form);
 
-    const response = await fetch('https://formspree.io/f/xanoqzvr', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
-      },
-      body: JSON.stringify(data)
-    });
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/vikramaditya.singh@move37capital.com', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+        },
+        body: formData,
+      });
 
-    if (response.ok) {
-      setSubmitted(true);
-      form.reset();
+      if (response.ok) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Something went wrong. Please try again later.');
     }
   };
 
@@ -52,6 +54,7 @@ const Contact = () => {
             </div>
           ) : (
             <form className="space-y-6" onSubmit={handleSubmit}>
+              <input type="hidden" name="_captcha" value="false" />
               <div>
                 <label className="block text-gray-900 font-semibold mb-2">Name</label>
                 <input
@@ -111,10 +114,13 @@ const Contact = () => {
               <MapPin className="text-blue-500 w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold">Address</h3>
-                <p>Spaces, The Charter Building,<br/> Uxbridge, UB8 1JG</p>
+                <p className="mt-2">
+            Move37 Capital,<br />
+            Spaces, The Charter Building,<br />
+            Uxbridge&nbsp;UB8&nbsp;1JG
+          </p>
               </div>
             </div>
-            
           </div>
         </div>
       </div>

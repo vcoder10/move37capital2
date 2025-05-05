@@ -9,7 +9,6 @@ const Footer = () => {
         {/* Company Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Move37 Capital</h3>
-          {/* <p>Innovative investment strategies backed by data, experience, and trust.</p> */}
           <div className="mt-4 flex items-center space-x-4">
             <a
               href="https://www.linkedin.com/company/move37capital"
@@ -26,7 +25,11 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <p className="flex items-center"><FaEnvelope className="mr-2" /> contact-us@move37capital.com</p>
           <p className="flex items-center mt-2"><FaPhone className="mr-2" /> +44 77410 19491</p>
-          <p className='mt-2'>Spaces, The Charter Building,<br/> Uxbridge, UB8 1JG</p>
+          <p className="mt-2">
+            Move37 Capital,<br />
+            Spaces, The Charter Building,<br />
+            Uxbridge&nbsp;UB8&nbsp;1JG
+          </p>
         </div>
 
       </div>
