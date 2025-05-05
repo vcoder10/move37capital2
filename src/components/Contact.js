@@ -41,7 +41,7 @@ const Contact = () => {
       </div>
 
       {/* Foreground */}
-      <div className="relative z-10 max-w-6xl w-full bg-white/10 backdrop-blur-sm p-12 rounded-3xl shadow-lg">
+      <div className="relative z-10 max-w-6xl w-full bg-white/50 backdrop-blur-sm p-12 rounded-3xl shadow-lg">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">Get in Touch</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -53,7 +53,7 @@ const Contact = () => {
           ) : (
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
-                <label className="block text-gray-700 font-semibold mb-2">Name</label>
+                <label className="block text-gray-900 font-semibold mb-2">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -63,7 +63,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-semibold mb-2">Email</label>
+                <label className="block text-gray-900 font-semibold mb-2">Email</label>
                 <input
                   type="email"
                   name="email"
@@ -73,7 +73,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-semibold mb-2">Message</label>
+                <label className="block text-gray-900 font-semibold mb-2">Message</label>
                 <textarea
                   name="message"
                   rows="5"
@@ -92,7 +92,7 @@ const Contact = () => {
           )}
 
           {/* Contact Info */}
-          <div className="flex flex-col justify-center space-y-8 text-gray-700">
+          <div className="flex flex-col justify-start mt-12 space-y-8 text-gray-900">
             <div className="flex items-start gap-4">
               <Mail className="text-blue-500 w-6 h-6 mt-1" />
               <div>
