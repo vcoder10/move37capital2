@@ -36,7 +36,7 @@ const Contact = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/images/london_fin4.jpg"
+          src="/images/london_bridge2.jpg"
           alt="Background"
           className="w-full h-full object-cover opacity-100"
         />

@@ -10,10 +10,11 @@ const WhatWeDo = () => {
         <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-6 leading-relaxed tracking-wide text-center">
           <strong className="text-blue-500 font-medium">Move37 Capital</strong> is an
            AI-driven hedge fund operating at the intersection of data science and statistics. 
-          We employ advanced machine learning models to guide our investment decisions. </p>
+           We leverage cutting-edge machine learning models to make our investment decisions across global markets.
+           </p>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-6 leading-relaxed tracking-wide text-center">Our name — <strong className="text-blue-500 font-medium"> Move37</strong> — pays tribute to the legendary 37th move made by DeepMind’s AlphaGo in its 
           historic match against world champion Lee Sedol, which demonstrated the creative potential of AI in strategic decision-making. 
-          This moment captures our mission: to bring intelligent, unconventional decision-making to the complex world of global financial markets.
+          It embodies our mission: to harness AI’s transformative power to make intelligent, unconventional decisions in the complex world of global financial markets.
         </p>
       </div>
     </section>
