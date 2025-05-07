@@ -4,73 +4,38 @@ import Home from "./pages/home";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import DisclaimerPopup from "./components/DisclaimerPopup";
-import CookiesPopup from "./components/CookiesPopup";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Disclaimer from "./components/Disclaimer";
-import CookiesPolicy from "./components/CookiesPolicy";
 
 function App() {
   const location = useLocation();
-
   const isUnrestrictedPath =
     location.pathname === "/privacy" || location.pathname === "/disclaimer";
 
-  const [showDisclaimer, setShowDisclaimer] = useState(false);
-  const [showCookies, setShowCookies] = useState(false);
+  const [showDisclaimer, setShowDisclaimer] = useState(() => {
+    const agreed = localStorage.getItem("userAgreed");
+    return agreed !== "true";
+  });
 
-  // Check localStorage on first load
-  useEffect(() => {
-    const disclaimerAccepted = localStorage.getItem("disclaimerAccepted");
-    const cookiesAccepted = localStorage.getItem("cookiesAccepted");
-
-    if (!disclaimerAccepted && !isUnrestrictedPath) {
-      setShowDisclaimer(true);
-    }
-
-    if (disclaimerAccepted && !cookiesAccepted) {
-      // delay showing cookies popup after disclaimer is accepted
-      setTimeout(() => {
-        setShowCookies(true);
-      }, 5000);
-    }
-  }, [isUnrestrictedPath]);
-
-  const handleAgreeDisclaimer = () => {
-    localStorage.setItem("disclaimerAccepted", "true");
+  const handleAgree = () => {
+    localStorage.setItem("userAgreed", "true");
     setShowDisclaimer(false);
-
-    // show cookie popup in 5 seconds
-    setTimeout(() => {
-      if (!localStorage.getItem("cookiesAccepted")) {
-        setShowCookies(true);
-      }
-    }, 5000);
-  };
-
-  const handleAcceptCookies = () => {
-    localStorage.setItem("cookiesAccepted", "true");
-    setShowCookies(false);
   };
 
   return (
     <div className={showDisclaimer && !isUnrestrictedPath ? "overflow-hidden h-screen" : ""}>
-      {/* App Routes */}
+      {/* Always render routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/contact" element={<CookiesPolicy />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
       </Routes>
 
-      {/* Popups */}
+      {/* Overlay disclaimer on top unless allowed path */}
       {showDisclaimer && !isUnrestrictedPath && (
-        <DisclaimerPopup onAgree={handleAgreeDisclaimer} />
-      )}
-
-      {showCookies && (
-        <CookiesPopup onAccept={handleAcceptCookies} />
+        <DisclaimerPopup onAgree={handleAgree} />
       )}
     </div>
   );
