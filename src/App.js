@@ -4,9 +4,9 @@ import Home from "./pages/home";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import DisclaimerPopup from "./components/DisclaimerPopup";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import Disclaimer from "./components/Disclaimer";
 import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPage from "./pages/PrivacyPage";
+import DisclaimerPage from "./pages/DisclaimerPage";
 
 function App() {
   const location = useLocation();
@@ -37,8 +37,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/privacy" element={<PrivacyPolicy />} />
-        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/disclaimer" element={<DisclaimerPage />} />
       </Routes>
 
      
