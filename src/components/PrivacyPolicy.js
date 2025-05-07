@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
 
         <h2 className="text-xl font-semibold text-blue-800 mt-10">1. Who We Are</h2>
         <p>
-          Move37 Capital is a UK-based firm. For the purposes of data protection law, we are the data controller of your personal information.
+        Move37 Capital Limited is a limited company registered in England and Wales with registered number 14593595 with registered office at Spaces - The Charter Building, Charter Place, Uxbridge, England, UB8 1JG. For the purposes of data protection law, we are the data controller of your personal information.
         </p>
 
         <h2 className="text-xl font-semibold text-blue-800 mt-10">2. What Information We Collect</h2>
