@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-black py-4 shadow-md font-sans">
+      <nav className="bg-[#9AA6B2] py-4 shadow-md font-sans">
         <div className="container mx-auto flex items-center justify-between px-6">
 
           {/* Logo with Link to Home */}
           <Link to="/" className="flex items-center space-x-4">
             <img
-              src="./images/logo.jpg"
+              src="./images/logo_png.png"
               alt="logo"
               className="h-8 md:h-10 object-contain"
             />
