@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const DisclaimerPopup = ({ onAgree }) => {
+const DisclaimerPopup = ({ onAgree, onDisagree }) => {
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => {
@@ -10,39 +10,43 @@ const DisclaimerPopup = ({ onAgree }) => {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-50">
-      {/* Full-page blocker with blur */}
-      <div className="absolute inset-0 bg-black bg-opacity-30 backdrop-blur-sm pointer-events-auto" />
-
-      {/* Top disclaimer bar with interaction */}
-      <div className="relative z-10 pointer-events-auto bg-blue-900 text-white text-sm md:text-base shadow-md w-full">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-2">
-          <p className="text-center md:text-left">
-            By using this site, you agree to our{" "}
-            <Link
-              to="/privacy"
-              className="underline hover:text-blue-200 transition"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Privacy Policy
-            </Link>{" "}
-            and{" "}
-            <Link
-              to="/disclaimer"
-              className="underline hover:text-blue-200 transition"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Terms of Use
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+      <div className="bg-[#072e4d] text-white rounded-md shadow-lg max-w-3xl w-full max-h-[90vh] p-6 overflow-hidden flex flex-col">
+        <h2 className="text-2xl font-semibold mb-4 text-[#d7b774]">Disclaimer and Notices</h2>
+        <div className="overflow-y-auto text-sm pr-2 mb-6 space-y-4">
+          <div>
+            <h3 className="font-semibold text-lg mb-2">Disclaimer</h3>
+            <p>
+              This disclaimer (“Disclaimer”) sets forth the general guidelines, disclosures, and terms of your use of the Move37 Capital website (“Website” or “Service”).
+              By accessing and using the Website, you acknowledge that you have read, understood, and agree to be bound by this Disclaimer.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg mb-2">Intended Audience</h3>
+            <p>
+              This site is for general informational purposes only. Nothing on this site should be construed as an offer to, or solicitation of, any potential clients
+              or investors for the provision of investment management or advisory services.
+            </p>
+          </div>
+          <div>
+            <Link to="/privacy" className="underline text-blue-200 hover:text-blue-100" target="_blank" rel="noopener noreferrer">
+              Read our full Privacy Policy
             </Link>
-            .
-          </p>
+          </div>
+        </div>
+
+        <div className="flex justify-end gap-4">
+          <button
+            onClick={onDisagree}
+            className="border border-white px-4 py-2 rounded hover:bg-white hover:text-[#072e4d] transition"
+          >
+            Do not accept
+          </button>
           <button
             onClick={onAgree}
-            className="bg-white text-blue-900 font-semibold px-4 py-1.5 rounded hover:bg-gray-100 transition"
+            className="bg-[#d7b774] text-[#072e4d] font-semibold px-4 py-2 rounded hover:bg-[#e5c88c] transition"
           >
-            I Agree
+            Accept
           </button>
         </div>
       </div>
