@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-6 py-12 bg-white">
+    <div className="relative min-h-screen flex items-center justify-center px-6 py-32 bg-white">
       {/* Background */}
       <div className="absolute inset-0">
         <img

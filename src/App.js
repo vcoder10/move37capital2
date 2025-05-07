@@ -6,6 +6,7 @@ import ContactPage from "./pages/ContactPage";
 import DisclaimerPopup from "./components/DisclaimerPopup";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Disclaimer from "./components/Disclaimer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
 export default function WrappedApp() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   );
