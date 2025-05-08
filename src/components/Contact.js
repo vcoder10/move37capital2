@@ -3,20 +3,26 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
 
-    const formData = new FormData(form);
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/contact-us@move37capital.com', {
+      setLoading(true);
+      const response = await fetch('http://localhost:5000/api/contact', {
         method: 'POST',
         headers: {
-          Accept: 'application/json',
+          'Content-Type': 'application/json',
         },
-        body: formData,
+        body: JSON.stringify(data),
       });
 
       if (response.ok) {
@@ -27,7 +33,9 @@ const Contact = () => {
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Something went wrong. Please try again later.');
+      alert('Failed to send message. Try again later.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -44,17 +52,18 @@ const Contact = () => {
 
       {/* Foreground */}
       <div className="relative z-10 max-w-6xl w-full bg-white/50 backdrop-blur-sm p-12 rounded-3xl shadow-lg">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-900">Get in Touch</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-900">
+          Get in Touch
+        </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Form */}
+          {/* Contact Form */}
           {submitted ? (
             <div className="text-center text-2xl font-semibold text-green-700">
               Thank you! Your message has been sent.
             </div>
           ) : (
             <form className="space-y-6" onSubmit={handleSubmit}>
-              <input type="hidden" name="_captcha" value="false" />
               <div>
                 <label className="block text-gray-900 font-semibold mb-2">Name</label>
                 <input
@@ -88,8 +97,9 @@ const Contact = () => {
               <button
                 type="submit"
                 className="w-full bg-blue-500 hover:bg-blue-600 text-white py-4 rounded-xl text-lg font-semibold"
+                disabled={loading}
               >
-                Send Message
+                {loading ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           )}
@@ -115,10 +125,10 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-semibold">Address</h3>
                 <p className="mt-2">
-            Move37 Capital,<br />
-            Spaces, The Charter Building,<br />
-            Uxbridge&nbsp;UB8&nbsp;1JG
-          </p>
+                  Move37 Capital,<br />
+                  Spaces, The Charter Building,<br />
+                  Uxbridge&nbsp;UB8&nbsp;1JG
+                </p>
               </div>
             </div>
           </div>

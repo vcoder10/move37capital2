@@ -7,6 +7,7 @@ import DisclaimerPopup from "./components/DisclaimerPopup";
 import ScrollToTop from "./components/ScrollToTop";
 import PrivacyPage from "./pages/PrivacyPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
+import CookiesPage from "./pages/CookiesPage";
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/disclaimer" element={<DisclaimerPage />} />
+        <Route path="/cookies" element={<CookiesPage />} />
       </Routes>
 
      
