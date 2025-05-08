@@ -17,7 +17,7 @@ const Contact = () => {
 
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://move37capital2.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
