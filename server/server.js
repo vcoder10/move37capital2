@@ -7,7 +7,13 @@ const sendEmail = require('./sendEmail');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin: 'https://move37capital2.netlify.app', // Replace with your frontend domain
+    methods: ['GET', 'POST'],
+    credentials: true,
+  }
+));
 app.use(express.json());
 
 app.post('/api/contact', async (req, res) => {
