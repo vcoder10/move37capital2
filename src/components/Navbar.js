@@ -13,7 +13,7 @@ const Navbar = () => {
             <img
               src="./images/logo_white_png.png"
               alt="logo"
-              className="h-8 md:h-10 object-contain"
+              className="h-8 md:h-10 object-contain lg:pl-6"
             />
           </Link>
 
