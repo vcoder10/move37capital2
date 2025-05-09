@@ -42,5 +42,7 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
-  }
+  },
+  "proxy": "https://move37backend.onrender.com"
+
 }
