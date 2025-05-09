@@ -2,7 +2,7 @@ import React from "react";
 
 const WhatWeDo = () => {
   return (
-    <div className="bg-[#B2B2B2]">
+    <div className="bg-white">
     <p className="pl-2 text-xs text-black ">
           <span className="text-xs align-super mr-1">*</span>
           Move37 Capital is a trading name of Laven Advisors LLP which is authorised by the Financial Conduct Authority.
