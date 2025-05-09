@@ -17,13 +17,13 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-15 z-10"></div>
 
       {/* Hero content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-blue-900 px-4">
       <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-center relative inline-block ">
   A Fast Growing Asset Management Firm
   <sup className="relative -top-2 sm:-top-3 md:-top-4 text-2xl sm:text-base md:text-3xl ml-1">*</sup>
 </h1>
 
-        <p className="text-base sm:text-lg md:text-2xl mb-6 text-white">
+        <p className="text-base sm:text-lg md:text-2xl mb-6">
           Trusted by top institutional investors
         </p>
         <Link
