@@ -17,8 +17,9 @@ const Contact = () => {
 
     try {
       setLoading(true);
-      const response = await fetch('https://move37capital2.onrender.com/api/contact', {
+      const response = await fetch('https://move37backend.onrender.com/api/contact/', {
         method: 'POST',
+        credentials:'include',
         headers: {
           'Content-Type': 'application/json',
         },
