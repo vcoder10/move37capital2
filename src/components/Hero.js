@@ -23,7 +23,7 @@ const Hero = () => {
   <sup className="relative -top-2 sm:-top-3 md:-top-4 text-2xl sm:text-base md:text-3xl ml-1">*</sup>
 </h1>
 
-        <p className="text-base sm:text-lg md:text-2xl mb-6 text-white">
+        <p className="text-base sm:text-lg md:text-2xl mb-6">
           Trusted by top institutional investors
         </p>
         <Link
