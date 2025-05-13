@@ -17,9 +17,9 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-0 z-10"></div>
 
       {/* Hero content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-blue-900 px-4 sm:px-6 md:px-8 lg:px-12 transform-none md:transform md:translate-x-[-35px] md:translate-y-[-60px]">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-blue-900 px-4 sm:px-6 md:px-8 lg:px-12 transform-none lg:transform lg:translate-x-[-62px] lg:translate-y-[-60px]">
 
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold mb-3 leading-tight max-w-4xl">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[28px] font-semibold mb-3 leading-tight max-w-4xl">
           A Fast Growing Asset Management Firm
           <sup className="relative -top-2 text-xs sm:text-sm ml-1">*</sup>
         </h1>
