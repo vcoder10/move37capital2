@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div>
      
-      <nav className="fixed top-0 w-full z-50 bg-[#122F43] py-4 shadow-md font-sans">
+      <nav className="fixed top-0 w-full z-50 bg-[#1b4460] py-4 shadow-md font-sans">
         <div className="container mx-auto flex items-center justify-between px-6 sm:px-0">
 
           {/* Logo with Link to Home */}
